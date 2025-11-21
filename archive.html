@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stirling Youth Folk Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Merriweather";
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="./home.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="./home.html#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="./history.html" class="w3-button w3-block w3-black">HISTORY</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="./gallery.html" class="w3-button w3-block w3-black">GALLERY</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="./videos.html" class="w3-button w3-block w3-black">VIDEOS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="./archive.html" class="w3-button w3-block w3-black">ARCHIVE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- Header with Text -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-container w3-center">
+    <img src="./IMG-20240415-WA0004.jpg" alt="ceilidh practice" style="width:100%">
+      <div class="w3-display-bottomleft w3-text-white" style="font-size:80px">Our Tune Archive</div>
+  </div>
+</header>
+
+<!-- Archive Container -->
+<div class="w3-container" id="archive" style="font-size:20px">
+  <div class="w3-content" style="max-width:1000px">
+    <h1 class="w3-center w3-padding-32"><span class="w3-wide">LEARN OUR TUNES</span></h1>
+  </div>
+
+  <div class="w3-content w3-center" style="max-width:1000px">
+    <div class="w3-display-container mySlides">
+      <div class="w3-row w3-padding-32 w3-center">
+        <div class="w3-third">
+          <img src="./High Drive.jpg" class="w3-round w3-margin-bottom" alt="music"  style="width:300px">
+          <p>The High Drive- <a href="https://drive.google.com/file/d/1SMLBpF9eDqB2ZxUcn6WOfMKkDl5Sp53a/view?usp=drive_link">PDF</a></p>
+        </div>
+        <div class="w3-third">
+          <img src="./Far From Home.jpg" class="w3-round w3-margin-bottom" alt="music" style="width:300px">
+          <p>Far From Home- <a href="https://drive.google.com/file/d/1nJy8xUcXgQF6-i1lImkyLveQJEp7wCNp/view?usp=drive_link">PDF</a></p>
+        </div>
+        <div class="w3-third">
+          <img src="./Flatwater Fran.jpg" class="w3-round w3-margin-bottom" alt="music" style="width:300px">
+          <p>Flatwater Fran- <a href="https://drive.google.com/file/d/1jKG4G-EpEkgjXjwftumcD41h0xOM-sMA/view?usp=drive_link">PDF</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <div class="w3-row w3-padding-32 w3-center">
+      <div class="w3-third">
+        <img src="./£50 Cashback.jpg" class="w3-round w3-margin-bottom" alt="music"  style="width:300px">
+        <p>£50 Cashback- <a href="https://drive.google.com/file/d/1KvdqSJ-5yAMT4v1CrINxhXH3ujgJ1M-8/view?usp=drive_link">PDF</a></p>
+      </div>
+      <div class="w3-third">
+        <img src="./Motorway Mazurka.jpg" class="w3-round w3-margin-bottom" alt="music" style="width:300px">
+        <p>The Motorway Mazurka- <a href="https://drive.google.com/file/d/1jyB0FCFrKFSzJFavy5QWmvzBzIVgYOKY/view?usp=drive_link">PDF</a></p>
+      </div>
+      <div class="w3-third">
+        <img src="./Spherical Bread.jpg" class="w3-round w3-margin-bottom" alt="music" style="width:300px">
+        <p>Spherical Bread- <a href="https://drive.google.com/file/d/1RI7grJ-f_8HIKRYz9dAF2NHcllD3pPqA/view?usp=drive_link">PDF</a></p>
+      </div>
+    </div>
+        
+        
+        
+    </div>
+    
+    
+  </div>
+
+  <div class="w3-center">
+    <div class="w3-section">
+      <button class="w3-button" onclick="plusDivs(-1)">❮ Prev</button>
+      <button class="w3-button" onclick="plusDivs(1)">Next ❯</button>
+    </div>
+    <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+    <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  </div>
+</div>
+
+<!-- Script to run the Slideshow element -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-sand w3-padding-48 w3-large">
+  <img src="./logo.jpg" class="w3-circle" alt="logo" style="width:30%">
+  <p>Made by Tom Chapman<br>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
